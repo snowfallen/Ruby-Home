@@ -2,10 +2,46 @@
 @media(max-width:$PC-4k){}
 @media(max-width:$PC-UHD){}
 @media(max-width:$PC){}
-@media(max-width:$LaptopL){}
-@media(max-width:$Laptop){}
-@media(max-width:$Tablet){}
-@media(max-width:$MobileL){}
+@media(max-width:$LaptopL){
+    .container-header,.container__home{
+        padding: 0 7.1% 0 7.1%;
+
+    }
+}
+@media(max-width:$Laptop){
+    header{
+        margin:15px 0 70px 0;
+    }
+    .container-header,.container__home{
+        padding: 0 2.1% 0 2.1%;
+    }
+}
+@media(max-width:$Tablet){
+    .container-header,.container__home{
+        padding: 0 8.1% 0 8.1%;
+    }
+    .container__home_img{
+        width: 60.2%;
+    }
+    .container-header__logo{
+        width: 58%;
+    }
+    .container-header__menu #menu{
+        display:none;
+    }
+    .container-header .burger{
+        display:flex;
+    }
+}
+@media(max-width:$MobileL){
+    .container__home_img{
+        display: none;
+    }
+    .container__home_txt{
+        width: 100%;
+        text-align: center;
+    }
+}
 @media(max-width:$MobileM){}
 @media(max-width:$MobileS){}
 @media(max-aspect-ratio:3/2){}

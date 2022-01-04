@@ -11,10 +11,12 @@
     <div id="wrapper">
         <header>
             <nav class="container-header">
-                <div class="container-header__logo"></div>
+                <div class="container-header__logo">
+                    <img src="./img/logo.png" alt="logo">
+                </div>
                 <div class="container-header__menu">
                     <menu id="menu">
-                        <li><a href="home">Home</a></li>
+                        <li><a href="home" class="active">Home</a></li>
                         <li><a href="propetries">Propetries</a></li>
                         <li><a href="about">About us</a></li>
                         <li><a href="blog">Blog</a></li>
@@ -28,7 +30,7 @@
                         <li><a href="contact">Contact us</a></li>
                     </menu>
                 </div>
-                <div class="burder">
+                <div class="burger">
                     <div class="burger__line"></div>
                     <div class="burger__line"></div>
                     <div class="burger__line"></div>
@@ -36,7 +38,61 @@
             </nav>
         </header>
         <main>
-            <div class="container__home" id="home"></div>
+            <div class="container__home" id="home">
+                <div class="container__home_txt">
+                    <h1>Find the perfect place to stay with your family</h1>
+                    <p>Buying a home is a life-changing experience, so shouldn’t your real estate agent be a life changer.</p>
+                </div>
+                <div class="container__home_img">
+                    <img src="./img/main-img.png" alt="main-img">
+                </div>
+                <div class="container__home_select">
+                    <div class="container-option">
+                        <div class="container-option__buy"><p>Buy</p></div>
+                        <div class="container-option__rent"><p>Rent</p></div>
+                        <div class="container-option__sell"><p>Sell</p></div>
+                    </div>
+                    <div class="container-select">
+                        <div class="container-select__location">
+                            <div class="container-select__location_block">
+                                <p>Location</p>
+                                <div class="arrow-block">
+                                    <div class="arrow-block__arrow"></div>
+                                    <div class="arrow-block__arrow"></div>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>Dhaka</li>
+                            </ul>
+                        </div>
+                        <div class="container-select__type">
+                            <div class="container-select__location_block">
+                                <p>Propetry type</p>
+                                <div class="arrow-block">
+                                    <div class="arrow-block__arrow"></div>
+                                    <div class="arrow-block__arrow"></div>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>Duplex</li>
+                            </ul>
+                        </div>
+                        <div class="container-select__price">
+                            <div class="container-select__location_block">
+                                <p>Price</p>
+                                <div class="arrow-block">
+                                    <div class="arrow-block__arrow"></div>
+                                    <div class="arrow-block__arrow"></div>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>$4000-$8000</li>
+                            </ul>
+                        </div>
+                        <button>Search</button>
+                    </div>
+                </div>
+            </div>
             <div class="container__propetries" id="propetries"></div>
             <div class="container__abous-us" id="about"></div>
             <div class="container__blog" id="blog"></div>
