@@ -34,7 +34,7 @@ main{
     }
     &_select{
         position: absolute;
-        top: 700px;
+        top: 600px;
         left: 40%;
         .container-option{
             display: flex;
@@ -46,13 +46,30 @@ main{
                     font-weight: 500;
                     opacity: 0.8;
                     line-height:27px;
-                    padding: 15px 44px 42px 31px;
+                    padding: 15px 0 12px 0;
+                }
+                &:first-child{
+                    padding: 0 0 0 31px;
+                }
+                &:nth-child(2){
+                    padding: 0 44px 0 44px;
+                }
+                &:last-child{
+                    padding: 0 31px 0 0;
                 }
             }
-            background-color: #fff;
+            background-color: rgb(255, 253, 253);
+            border-radius: 5px 5px 0px 0px;
+            width: 250px;
+            box-shadow: #030A1B 10px 0px 10px 10px;
         }
         .container-select{
+            align-items: center;
             display: flex;
+            height: 100%;
+            background-color: rgb(255, 253, 253);
+            border-radius: 0 5px 5px 5px;
+            box-shadow: #030A1B 10px 20px 10px 10px;
             &__location{
                 &_block{
                     p{
@@ -61,26 +78,28 @@ main{
                         color:#030A1B;
                         font-weight:500;
                         opacity: 80%;
-                        padding: 10px 0 0 31px;
+                        padding: 32px 0 0 31px;
                     }
 
                 }
                 .arrow-block{
-                    &::first-child{
-
+                    &:first-child{
+                        width: 20px;
+                        height:2px;
+                        background-color: black;
                     }
-                    &::last-child{
+                    &:last-child{
 
                     }
                 }
                 ul{
-                    li{
+                    li{ 
                         font-family: 'Poppins', sans-serif;
                         font-size: calc(14px + 8 * (100vw / 1600));
                         color:#030A1B;
                         font-weight:600;
                         opacity: 80%;
-                        padding: 10px 0 0 31px;
+                        padding: 10px 67px 30px 31px;
                     }
                 }
             }
@@ -111,7 +130,7 @@ main{
                         color:#030A1B;
                         font-weight:600;
                         opacity: 80%;
-                        padding: 10px 0 0 31px;
+                        padding: 10px 67px 30px 31px;
                     }
                 }
             }
@@ -142,14 +161,12 @@ main{
                         color:#030A1B;
                         font-weight:600;
                         opacity: 80%;
-                        padding: 10px 0 0 31px;
+                        padding: 10px 67px 30px 31px;
                     }
                 }
                 &::before{
-                    width: 1px;
-                    height: 40px;
-                    background-color: black;
-                    content:"";
+                    background-color:black;
+                    content:".";
                 }
             }
         }
