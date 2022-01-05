@@ -7,13 +7,21 @@
         padding: 0 7.1% 0 7.1%;
 
     }
+    .container__home_select{
+        top: 557px;
+        left:7.1%;
+    }
 }
 @media(max-width:$Laptop){
     header{
         margin:15px 0 70px 0;
     }
-    .container-header,.container__home{
+    .container-header,.container__home {
         padding: 0 2.1% 0 2.1%;
+    }
+    .container__home_select{
+        top: 457px;
+        left:2.1%;
     }
 }
 @media(max-width:$Tablet){
@@ -32,6 +40,51 @@
     .container-header .burger{
         display:flex;
     }
+    .container__home_select{
+        top: 557px;
+        left:8.1%;
+    }
+    .container__home_select .container-select__type ul li{
+        padding: 10px 0 10px 0;
+    }
+    .container__home_select .container-select__location ul li{
+        padding: 10px 0 10px 0;
+    }
+    .container__home_select .container-select__price ul li{
+        padding: 10px 0 10px 0;
+    }
+    .container__home_select .container-select__location ,.container__home_select .container-select__type ,.container__home_select .container-select__price{
+        padding:0;
+    }
+    .container__home_select .container-select{
+    
+        align-items: center;
+        text-align: center;
+    }
+    .container__home_select .container-select .line {
+        display:none;
+    }
+    .container__home_select .container-select button{
+        margin:25px 10px 10px 20px;
+    }
+    .container__home_select .container-select__location_block{
+        margin:0 auto;
+    }
+    .container__home_select .container-select {
+        border-radius: 0 5px 5px 5px;
+    }
+}
+@media(max-width:668px){
+    .container__home_select .container-select{
+        flex-direction: column;
+    }
+    .container__home_select{
+        top: 487px;
+        left:8.1%;
+    }
+    .container__home_select .container-select {
+        border-radius: 0 0 5px 5px;
+    }
 }
 @media(max-width:$MobileL){
     .container__home_img{
@@ -40,6 +93,12 @@
     .container__home_txt{
         width: 100%;
         text-align: center;
+    }
+    .container__home_select{
+        position: absolute;
+        top: 400px;
+        left:0;
+        margin: 0 auto;
     }
 }
 @media(max-width:$MobileM){}
