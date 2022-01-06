@@ -23,6 +23,9 @@
         top: 457px;
         left:2.1%;
     }
+    .container__home_select .container-select__location ,.container__home_select .container-select__type ,.container__home_select .container-select__price{
+        padding:0;
+    }
 }
 @media(max-width:$Tablet){
     .container-header,.container__home{
@@ -53,9 +56,6 @@
     .container__home_select .container-select__price ul li{
         padding: 10px 0 10px 0;
     }
-    .container__home_select .container-select__location ,.container__home_select .container-select__type ,.container__home_select .container-select__price{
-        padding:0;
-    }
     .container__home_select .container-select{
     
         align-items: center;
@@ -75,15 +75,18 @@
     }
 }
 @media(max-width:668px){
-    .container__home_select .container-select{
-        flex-direction: column;
+    .container__home{
+        flex-wrap: wrap;
     }
     .container__home_select{
-        top: 487px;
-        left:8.1%;
+        position:static;
     }
-    .container__home_select .container-select {
-        border-radius: 0 0 5px 5px;
+    .container__home_txt,.container__home_img,.container__home_select{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .container__home_select .container-select{
+        flex-direction: column;
     }
 }
 @media(max-width:$MobileL){
@@ -93,12 +96,6 @@
     .container__home_txt{
         width: 100%;
         text-align: center;
-    }
-    .container__home_select{
-        position: absolute;
-        top: 400px;
-        left:0;
-        margin: 0 auto;
     }
 }
 @media(max-width:$MobileM){}
